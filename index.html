@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Achivements">Achivements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Engineering Innovator</p>
+            <h1>Hi, I'm <span>E Sravan</span><br>Kumar From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user_1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I’m Sravan, an R&D enthusiast passionate about IoT, AI, and Embedded Systems.
+                    With hands-on experience in Arduino, Raspberry Pi, and automation projects, I turn ideas into real-world solutions.
+                    I love building tech that solves problems and inspires innovation.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br> C/C++, Python, Arduino IDE</li>
+                        <li><span>Embedded Systems</span><br>Arduino, Raspberry Pi, NodeMCU, Sensor Integration</li>
+                        <li><span>IoT & Communication</span><br>Wi-Fi, Bluetooth, MQTT, Firebase</li>
+                        <li><span>AI & Robotics</span><br>Python (AI/ML basics), OpenCV, ROS</li>
+                        <li><span>Tools & Platforms</span><br>Linux, Git, VS Code, HTML/CSS, Google Apps Script,Proteus</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - 2025</span><br>R&D Engineer at Leap Robots LLP</li>
+                        <li><span>2022 - 2023</span><br>Robotics Technician at Brightchamps</li>
+                        <li><span>2021 - 2022</span><br>IOT developer at AB Tech Ville</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>B.Tech from JNTUH Hyderabad</li>
+                        <li><span>2023</span><br>Embedded Systems from Internshala</li>
+                        <li><span>2020</span><br>Diploma from Mahaveer Institute of Science and Technology</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------Achivements---------------- -->
+<div id="Achivements">
+    <div class="container">
+        <h1 class="sub-title">My Achivements</h1>
+        <div class="Achivements-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>KGR Changemaker Of The Year (2023-2024)</h2>
+                <p>I have been honored with the Gold Medal and Certificate of Excellence for being the Changemaker of
+                    KGRH for the year 2023-2024.
+                    </p>
+                <a href="https://drive.google.com/file/d/1IZSUkWAbbCvSiy2_CLuQGafmdimhcxo7/view?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>AIRA'S ROBOTICS Award</h2>
+                <p>For the excellence contributions offered towards AIRA's Robotics Workshop held
+                    at Deloitte University</p>
+                <a href="https://drive.google.com/file/d/1eGtvcbscbpT5MwANP5NpOpBvgEL0Tfbq/view?usp=sharing">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Paper Publication at 1st ICMED(2024)</h2>
+                <p>Delighted to have received recognition for my academic contribution with a paper publication in the
+                    proceedings of the International Conference on (ICMED) 2024.</p>
+                <a href="https://drive.google.com/file/d/1luh-eExJFAaVBoWn6BPfyDNTGCjVKNAj/view?usp=sharing">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------projects------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="humanoid_head.png">
+                <div class="layer">
+                    <h3>Humanoid_head</h3>
+                    <p>Designed a humanoid head prototype with basic facial movement and interactive robotics.</p>
+                    <a href="https://drive.google.com/file/d/1zWccncJQUSDyyRUbWZcUSQ6nZr7spXY3/view?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Robotic_arm.png">
+                <div class="layer">
+                    <h3>Robotic ARM</h3>
+                    <p>Built a programmable robotic arm capable of precise movement and task automation using stepper motors and Arduino.</p>
+                    <a href="https://drive.google.com/file/d/1rsAKEhkiO7N8yDnEDi-2S34w5K4sm7ke/view?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="jarvis.png">
+                <div class="layer">
+                    <h3>Own AI-Jarvis</h3>
+                    <p> Developed a custom AI assistant (JARVIS) in Python for voice commands, automation, and real-time information retrieval.</p>
+                    <a href="https://drive.google.com/file/d/1f6yoDRN_vtlZDqtJ0qg5EhTxDZvzoyTB/view?usp=sharing"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://drive.google.com/drive/folders/1ADr5dL-GnDTnDjbrSEezMzt1SyVkZZoJ?usp=sharing" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> sravanedigi123@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 9951320640</p>
+                <div class="social-icons">
+
+                    <a href="https://www.linkedin.com/in/esravankumar6722/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="E.Sravan Kumar.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzi3tjoU7IRLdfbflAh9XXiVNt3aymmbTvJQ6KxdOJP8FGFbwsAwhwklknpj6FIe5y9/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
